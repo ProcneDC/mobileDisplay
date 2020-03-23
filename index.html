@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Mobile Display</title>
+  </head>
+
+  <body>
+    <div id="intro">
+      <h4>Home</h4>
+      <p>El inicio de este sitio de noticias facilita la informacion del valor del dolar y del tiempo en Buenos Aires.</p>
+      <p>Acciones en la página: el usuario/a puede desplegar el menu lateral para filtrar noticias por categoria (clickear &#9776; para ver opciones).</p>
+      <p>Tambien buscar noticias desde la navegacion principal.</p>
+      <p>La home se divide en bloques de tres secciones: "noticia principal", "debates urgentes" y "notas relacionadas".</p>
+    </div>
+    <div id="panel">
+      <h4>Publicaciones recientes</h4>
+      <p>El primer bloque muestra las ultimas publicaciones. Cada noticia principal contiene copete, una fotografía, el título del artículo, el nombre del autor/a, cantidad de comentarios y bajada.</p>
+      <p>El destacado de debates urgentes, tiene las mismas propiedades pero sin copete.</p>
+      <p>Las noticias relacionadas y las editoriales, contienen copete, el título del artículo, el nombre del autor/a y cantidad de comentarios.
+Se muestran de una manera diferente para crear una experiencia dinámica para el usuario/a.</p>
+    </div>
+    <div id="media">
+      <p>Los bloques que contienen articulos con archivos video/audio contienen link al archivo multimedia, titulo del programa, autor/a y comentarios.</p>
+    </div>
+    <div id="category">
+      <p>El ultimo bloque trae noticias segun categoria: POLITICA, etc tiene la misma configuracion que las noticias recientes (nota principal, nota secundaria y noticias relacionadas). </p>
+      <p>Acciones en la página: el usuario/a puede desplegar el menu lateral secundario para buscar noticias que le interesen segun las distintas categorias del sitio. </p>
+    </div>
+    <div id="pc">
+      <img src="img/monitor.svg" alt="pc" width="30"> <a class="link" href="indexpc.html">Version DESKTOP</a>
+    </div>
+    <div class="phone">
+      <img class="phone-img" src="img/cel.png" alt="phone" />
+    </div>
+
+    <div class="news">
+      <img class="news-img" src="img/news.png" />
+    </div>
+
+    <span class="menu" onclick="openNav()"></span>
+    <span id="mySidenavClose" class="menu-close" onclick="closeNav()"></span>
+    <img id="mySidenav" class="menu-img" src="img/menu.png" />
+
+
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>
