@@ -1,26 +1,34 @@
+::selection {
+  background: blue;
+  color: white;
+}
+::-moz-selection {
+  background: blue;
+  color: white;
+}
 .news {
   position: relative;
   z-index: 1;
   width: 358px;
+}
+.news-img {
+  position: absolute;
+  left: 537px;
+  width: 98%;
+  top: 66px;
+  margin: 20px 10px;
+  padding: 5px 0px;
 }
 .phone {
   position: fixed;
   left: 500px;
   z-index: 4;
 }
-.news-img {
-  position: absolute;
-  left: 537px;
-  width: 98%;
-  top: 53px;
-  margin: 20px 10px;
-  padding: 5px 0px;
-}
 .phone-img {
   z-index: 2;
-  box-shadow: inset 0px 0px 2px 37px white;
+  box-shadow: inset 0px 50px 72px #000000;
   border-bottom: 69px solid white;
-  height: 100vh;
+  height: 100%;
   width: 450px;
 }
 #intro {
@@ -61,7 +69,10 @@
   position: fixed;
   top: 600px;
   left: 1000px;
-  width: 300px;
+  width: auto;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
 }
 .link{
   margin-left: 15px;
@@ -71,7 +82,12 @@
 }
 .iphone{
   text-align: center;
-  margin-bottom: 25px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 #desk{
   overflow-x: hidden;
@@ -79,7 +95,7 @@
 .menu{
   position: absolute;
   left: 564px;
-  top: 93px;
+  top: 106px;
   height: 30px;
   width: 30px;
   z-index: 5;
@@ -89,7 +105,7 @@
   display: none;
   position: absolute;
   left: 564px;
-  top: 93px;
+  top: 102px;
   height: 30px;
   width: 30px;
   z-index: 6;
@@ -100,10 +116,14 @@
   width: 349px;
   position: fixed;
   left: 537px;
-  top: 57px;
+  top: 71px;
   margin: 20px 10px;
   padding: 5px 0px;
   z-index: 3;
+}
+.uppercase{
+  text-transform: uppercase;
+  font-size: 11px;
 }
 @media (max-width: 425px) {
   .phone {
